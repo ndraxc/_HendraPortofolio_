@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Hendra</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Gaya Umum */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            scroll-behavior: smooth;
+        }
+
+
+
+
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            overflow: hidden;
+            padding-top: 20px;
+        }
+
+        /* Header */
+        header {
+            background: #333;
+            color: #fff;
+            padding: 20px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        header .logo {
+            font-size: 1.5em;
+            font-weight: 600;
+            margin-left: 60px;
+        }
+
+        .highlight {
+            color: #0e1099da;
+        }
+        .highlight1 {
+            color: #78aab3;
+        }
+        .highlight2 {
+            color: #b45858;
+        }
+        
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1em;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #78aab3;
+        }
+
+        /* Konten Utama */
+        .content {
+            padding: 40px 0;
+            text-align: left;
+        }
+
+        h2 {
+            color: #333;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .info, .skills {
+            margin: 20px 0;
+            padding: 30px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            text-align: left;
+            font-weight: 300;
+        }
+
+        .info p, .skills ul li {
+            font-size: 1.1em;
+        }
+
+        .profile-container {
+            display: flex;
+            align-items: flex-start; /* Gambar dan teks sejajar di atas */
+        }
+
+        .profile-img {
+            width: 150px; /* Ukuran gambar */
+            height: auto; /* Mempertahankan rasio aspek */
+            border-radius: 50%; /* Membuat gambar berbentuk lingkaran */
+            margin-right: 20px; /* Jarak antara gambar dan teks */
+        }
+
+        .profile-description {
+            display: flex;
+            flex-direction: column; /* Mengatur deskripsi dalam kolom */
+        }
+
+        .skills ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .skills ul li {
+            padding: 8px 0;
+            font-size: 1.1em;
+            font-weight: 400;
+            transition: transform 0.3s, color 0.3s;
+        }
+        .info ul li {
+            padding: 8px 0;
+            font-size: 1.1em;
+            font-weight: 400;
+            transition: transform 0.3s, color 0.3s;
+        }
+
+        .skills ul li:hover {
+            color: #333;
+            transform: scale(1.05);
+        }
+
+        /* Bagian Sosial Media */
+        .socials {
+            margin: 30px 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .socials a {
+            margin: 0 15px;
+            color: #333;
+            font-size: 1.2em;
+            transition: color 0.3s, transform 0.3s;
+            display: inline-flex;
+            align-items: center;
+            text-decoration: none;
+        }
+
+        .socials a:hover {
+            color: #074eb9;
+            transform: scale(1.1);
+        }
+        .info a:hover {
+            color: #6b98db;
+            transform: scale(1.1);
+        }
+
+        .socials i {
+            margin-right: 8px;
+        }
+
+        /* Footer */
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 0.9em;
+        }
+
+        footer p {
+            margin: 0;
+            font-weight: 300;
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .info, .skills {
+                padding: 20px;
+            }
+
+            .socials {
+                flex-direction: column;
+            }
+            
+            .profile-container {
+                flex-direction: column; /* Untuk tampilan mobile, gambar dan deskripsi berada di bawah satu sama lain */
+                align-items: center; /* Pusatkan konten */
+            }
+
+            .profile-img {
+                margin: 0 0 10px 0; /* Hapus margin kanan, tambahkan margin bawah */
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo"><span class="highlight1">Putu</span> Hendra</div>
+        <nav>
+            <ul>
+                <li><a href="#tentang">  Tentang</a></li>
+                <li><a href="#keahlian">Keahlian</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- <br>
+   
+    <p style="text-align: center;"> Selamat Datang di portofolio Hendra </p> -->
+  
+    
+    <!-- Konten Utama -->
+    <div class="container">
+        <div class="content">
+            <!-- Bagian Tentang Saya -->
+            
+            <section id="tentang" class="info">
+                <h2>Tentang Saya</h2>
+                <div class="profile-container">
+                    <img src="profile hendra.jpg" alt="Putu Hendra" class="profile-img">
+                    <div class="profile-description">
+                        <br> 
+                       
+                    </div>
+                    
+                </div>
+                <p> Halo!  Saya seorang profesional di bidang <span class="highlight">Web Development,</span>  berdedikasi pada <span class="highlight">pengembangan website</span>  modern dan responsif untuk <span class="highlight">meningkatkan pengalaman pengguna.</span> </p>
+            </section>
+            
+            <hr style="width: 70%; border: 0.5px solid rgba(92, 92, 92, 0.082); margin: auto;">
+            
+            <!-- Bagian Keahlian -->
+            <section id="keahlian" class="skills">
+                <h2> Keahlian </h2>
+                <ul>
+                    <li> <span class="highlight2">#</span>  Front-End Development ( <span class="highlight">HTML, CSS, JavaScript,</span>)</li>
+                    <li> <span class="highlight2"># </span> Back-End Development ( <span class="highlight"> PHP, MySQL)</span></li>
+                    <li> <span class="highlight2">#</span>  Bootstrap</li>
+                    <li> <span class="highlight2">#</span>  Framework: <span class="highlight">  Laravel </span></li>
+                </ul>
+            </section>
+            <hr style="width: 70%; border: 0.5px solid rgba(92, 92, 92, 0.082); margin: auto;">
+            <!-- Bagian Kontak -->
+            <section id="kontak" class="info">
+                <h2> Kontak</span> </h2>
+                <!-- <ul>
+                    <li>Email: endra2310@gmail.com </li>
+                     <li>Telepon: +62 85792972827</li>
+                   
+                </ul> -->
+                <p>Email:  endra2310@gmail.com</p>
+                <p>Telepon: +62 85792972827</p>
+            </section>
+           
+         
+            <br>
+            <br>
+    <br>
+
+            <!-- Bagian Media Sosial -->
+             <p style="text-align: center;"> Ayo Ikuti saya lebih lanjut!</p>
+            <div class="socials">
+                <a href="https://www.instagram.com/_putundra_/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+                <a href="https://www.linkedin.com/in/i-putu-hendra-ari-artawan-6ab258333/" target="_blank"><i class="fab fa-linkedin-in"></i>LinkedIn</a>
+                <a href="https://www.tiktok.com/@_putundra_" target="_blank"><i class="fab fa-tiktok"></i>TikTok</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Portofolio I Putu Hendra Ari Artawan</p>
+    </footer>
+</body>
+</html>
